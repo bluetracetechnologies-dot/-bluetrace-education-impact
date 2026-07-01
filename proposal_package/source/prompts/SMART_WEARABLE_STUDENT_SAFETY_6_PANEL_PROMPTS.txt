@@ -1,0 +1,98 @@
+Smart Wearable Student Safety - 6 Panel Premium Prompt Set
+
+Use with:
+- CARTOON_VISUAL_QUALITY_STANDARD.md
+- CARTOON_PRODUCTION_PROMPT_PACK.txt
+
+Global style prefix (attach to every panel prompt):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Global negative prompt (attach to every panel prompt):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Output spec for every panel:
+- Resolution: 1920x1080 PNG (minimum)
+- Optional: 3000x1688 PNG for print
+- Keep top 12 percent clear for title
+- Keep bottom 14 percent clear for caption
+- Maintain character continuity (same parent/student uniforms)
+
+Panel 1 - Morning uncertainty (Problem)
+Scene prompt:
+"Premium realistic illustration of an Indian parent at home near the entrance gate in early morning light, looking at mobile phone with worried expression because school bus status is unknown, child with school bag waiting nearby, subtle clock on wall showing rush hour, clean realistic interior details, trustworthy but tense mood, boardroom-quality composition with clear left-to-right story flow."
+Caption:
+"Parent is unsure if the student boarded safely."
+UI hint on phone:
+"Status: Awaiting boarding confirmation"
+Primary visual emotion:
+Anxiety and uncertainty
+
+Panel 2 - Boarding checkpoint confirmation (Intervention)
+Scene prompt:
+"Premium realistic illustration at school bus boarding point, student taps Bluetrace wearable checkpoint at bus door, bus marshal/attendant visible, parent phone screen shows successful event card 'Boarded 7:42 AM', realistic bus textures, school uniforms, morning sunlight, calm and trustworthy mood, precise focus on wearable tap event and confirmation UI."
+Caption:
+"Wearable checkpoint confirms safe boarding instantly."
+UI hint on phone:
+"Boarded at 7:42 AM | Route A3"
+Primary visual emotion:
+Relief and trust
+
+Panel 3 - Unified school-day updates (Continuity)
+Scene prompt:
+"Premium realistic illustration of teacher in classroom posting homework and circular through school app dashboard on tablet, parent and student phones receive synchronized notifications, clear but minimal app UI cards for homework and notice, modern classroom background with students engaged, professional and organized atmosphere, visual clarity for one-platform communication concept."
+Caption:
+"Homework and notices reach families in one trusted app."
+UI hint on screen:
+"2 new updates: Homework, Circular"
+Primary visual emotion:
+Confidence and control
+
+Panel 4 - Route delay exception handling (Real-time response)
+Scene prompt:
+"Premium realistic illustration of transport control moment, bus route delay alert appears on parent app with acknowledgement button, school transport coordinator monitoring dashboard in office, map widget with delayed segment highlighted in soft alert color, not panic-style, professional incident response framing, realistic devices and consistent branding accents."
+Caption:
+"Delay alert with acknowledgement closes communication gaps fast."
+UI hint on phone:
+"Route delay: 15 min | Acknowledge"
+Primary visual emotion:
+Managed urgency with clarity
+
+Panel 5 - Safe pickup closure (Outcome loop)
+Scene prompt:
+"Premium realistic illustration at evening pickup point, student exits transport and pickup checkpoint confirms handover, parent phone displays 'Picked up 4:18 PM', warm evening light, parent and student expressions relaxed, clean environment, realistic uniforms and transport details, visual narrative of complete safety loop."
+Caption:
+"Pickup confirmation completes the daily safety loop."
+UI hint on phone:
+"Picked up at 4:18 PM"
+Primary visual emotion:
+Assurance and closure
+
+Panel 6 - Principal dashboard outcome view (Board-level value)
+Scene prompt:
+"Premium realistic illustration inside principal/director office, large dashboard screen shows metrics cards: boarding confirmation rate, average alert acknowledgement time, route reliability trend, parent confidence index, principal and management member reviewing dashboard with confident expressions, premium corporate-school atmosphere, clean data visual hierarchy and realistic screen typography."
+Caption:
+"Management sees measurable trust and safety outcomes."
+Dashboard KPI hints:
+"Boarding confirmation: 98%"
+"Avg acknowledgement: 3m 40s"
+"Route on-time: 94%"
+Primary visual emotion:
+Executive confidence and decision readiness
+
+Panel-to-panel continuity rules:
+- Keep same student age group and uniform style.
+- Keep one consistent parent character identity.
+- Keep phone UI style consistent across all panels.
+- Keep school branding subtle and non-intrusive.
+- Keep color accents consistent with Bluetrace palette.
+
+Slide assembly order:
+1. Problem (Panel 1)
+2. Intervention kickoff (Panel 2)
+3. Operational continuity (Panel 3)
+4. Exception control (Panel 4)
+5. Safety closure (Panel 5)
+6. Management proof (Panel 6)
+
+Presenter line (optional under full strip):
+"From uncertainty to measurable trust: Bluetrace makes student safety and communication visible, accountable, and decision-ready."

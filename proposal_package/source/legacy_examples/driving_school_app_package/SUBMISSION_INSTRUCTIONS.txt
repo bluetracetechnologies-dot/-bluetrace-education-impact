@@ -1,0 +1,20 @@
+Submission Package Guide
+
+1. Paste COVER_LETTER_PLAIN_TEXT.txt into Upwork proposal body.
+2. Attach these documents:
+- Driving_School_App_Reference_Architecture_v1.pdf
+- Driving_School_App_Milestone_Plan_v1.pdf
+- PROJECT_SUMMARY.md (convert to PDF if needed)
+- TECHNICAL_REQUIREMENTS_CHECKLIST.md (optional attachment)
+
+3. Mention in first two lines:
+- Availability to start immediately
+- Recommended stack (Flutter preferred unless client requests React Native)
+
+4. In interview, confirm:
+- MVP boundaries for current budget
+- Contract-to-hire expansion roadmap
+
+Prepared by:
+A.R. Ansari | Bluetrace Engineering
+Date: 2026-06-25

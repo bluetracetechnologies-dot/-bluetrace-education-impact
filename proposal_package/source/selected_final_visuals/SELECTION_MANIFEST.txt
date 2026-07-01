@@ -1,0 +1,17 @@
+Selected Final Visuals Manifest
+Date: 2026-07-01
+
+Approved to keep:
+1) BT-PRESIDENCY-AI-TEACHER-STORYBOARD-v1.0-R0.png
+2) BT-PRESIDENCY-WEARABLE-STORYBOARD-v1.0-R0.png
+
+Not to keep in active set:
+- Earlier wearable variant (archive only)
+- Duplicate wearable export (do not share)
+
+Current status:
+- Placeholder manifest created.
+- Final selected storyboard image files are not yet present in this workspace folder.
+
+Next step:
+- Copy the two approved final boards into this folder using the exact filenames above.

@@ -1,0 +1,99 @@
+Student AI/Robotics Innovation Program - 6 Panel Premium Prompt Set
+
+Use with:
+- CARTOON_VISUAL_QUALITY_STANDARD.md
+- CARTOON_PRODUCTION_PROMPT_PACK.txt
+
+Global style prefix (attach to every panel prompt):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Global negative prompt (attach to every panel prompt):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Output spec for every panel:
+- Resolution: 1920x1080 PNG (minimum)
+- Optional: 3000x1688 PNG for print
+- Keep top 12 percent clear for title
+- Keep bottom 14 percent clear for caption
+- Maintain mentor/student continuity across all panels
+
+Panel 1 - Theory-only learning gap (Problem)
+Scene prompt:
+"Premium realistic illustration of an Indian middle/high school classroom with students passively listening to theory-heavy lecture, minimal hands-on tools visible, some students disengaged, teacher at board with dense notes, realistic classroom details and uniforms, mood shows low energy and low practical engagement, boardroom-quality storytelling composition."
+Caption:
+"Students need practical innovation, not theory-only sessions."
+UI hint on board:
+"Topic: Sensors and Logic (Theory)"
+Primary visual emotion:
+Low engagement and stagnation
+
+Panel 2 - Innovation lab kickoff (Intervention)
+Scene prompt:
+"Premium realistic illustration of Bluetrace mentor introducing AI/robotics challenge in school innovation lab, students grouped around starter kits and laptops, clear challenge card on screen, energetic but structured environment, realistic hardware components and safe lab setup, strong visual shift from passive to active learning."
+Caption:
+"Bluetrace launches challenge-based AI/robotics learning."
+UI hint on display:
+"Challenge: Smart Attendance Bot - Week 1"
+Primary visual emotion:
+Curiosity and momentum
+
+Panel 3 - Build and iterate (Hands-on execution)
+Scene prompt:
+"Premium realistic illustration of students assembling robotics prototype with mentor guidance, one student coding, one wiring sensors, one testing movement, teacher observing progress, realistic tools and breadboards, accurate hand/device proportions, collaborative and focused atmosphere, clean visual hierarchy for teamwork."
+Caption:
+"Students build, test, and learn through iteration."
+UI hint on laptop:
+"Sensor status: OK | Build v0.3"
+Primary visual emotion:
+Ownership and problem-solving
+
+Panel 4 - AI-assisted troubleshooting (Skill growth)
+Scene prompt:
+"Premium realistic illustration of student team using AI assistant on tablet to debug code logic and improve robot behavior, mentor guiding critical thinking instead of direct answers, classroom/lab hybrid setting, realistic UI showing suggestions and test logs, clear depiction of assisted learning workflow."
+Caption:
+"AI support accelerates learning without removing thinking."
+UI hint on tablet:
+"Suggestion: optimize threshold + retry loop"
+Primary visual emotion:
+Confidence and skill development
+
+Panel 5 - Demo day and parent visibility (Trust + pride)
+Scene prompt:
+"Premium realistic illustration of school demo day where student team presents working robotics project to parents and teachers, project scorecard screen visible, parents capturing moments on phones, polished event setup with posters and prototypes, emotionally uplifting but professional tone."
+Caption:
+"Demo day proves real student capability and progress."
+UI hint on scoreboard:
+"Prototype score: 87/100 | Team Delta"
+Primary visual emotion:
+Pride and validation
+
+Panel 6 - Principal dashboard and program outcomes (Board-level proof)
+Scene prompt:
+"Premium realistic illustration inside principal/director office showing program dashboard with KPIs: participation rate, project completion rate, mentor feedback score, showcase count, principal and academic coordinator reviewing trends confidently, polished executive setting, readable chart hierarchy and institutional credibility."
+Caption:
+"Management sees measurable innovation outcomes and readiness."
+Dashboard KPI hints:
+"Participation: 82%"
+"Project completion: 74%"
+"Showcase count: 18"
+"Mentor feedback score: 4.5/5"
+Primary visual emotion:
+Decision confidence and strategic value
+
+Panel-to-panel continuity rules:
+- Keep same student team identity and grade band across panels.
+- Keep mentor and teacher appearance consistent.
+- Keep lab setup and UI visual language coherent across scenes.
+- Keep visuals realistic and near-term deployable (no sci-fi exaggeration).
+- Keep brand-safe color accents aligned to Bluetrace palette.
+
+Slide assembly order:
+1. Learning gap (Panel 1)
+2. Program kickoff (Panel 2)
+3. Build execution (Panel 3)
+4. AI-assisted improvement (Panel 4)
+5. Public demo proof (Panel 5)
+6. Management KPI proof (Panel 6)
+
+Presenter line (optional under full strip):
+"Bluetrace converts passive classrooms into measurable innovation ecosystems through guided AI and robotics practice."

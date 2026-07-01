@@ -1,0 +1,99 @@
+Bluetrace Engineering Differentiation - 6 Panel Premium Prompt Set
+
+Use with:
+- CARTOON_VISUAL_QUALITY_STANDARD.md
+- CARTOON_PRODUCTION_PROMPT_PACK.txt
+
+Global style prefix (attach to every panel prompt):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school and engineering environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Global negative prompt (attach to every panel prompt):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Output spec for every panel:
+- Resolution: 1920x1080 PNG (minimum)
+- Optional: 3000x1688 PNG for print
+- Keep top 12 percent clear for title
+- Keep bottom 14 percent clear for caption
+- Maintain stakeholder and engineer continuity across all panels
+
+Panel 1 - Generic vendor limitation (Problem)
+Scene prompt:
+"Premium realistic illustration of school management reviewing a generic vendor presentation with only basic training slides and no implementation roadmap, stakeholders appear unconvinced, neutral conference room setting, realistic projector and documents, visual narrative of limited depth and unclear outcomes."
+Caption:
+"Generic offerings stop at slides, not system outcomes."
+UI hint on projected slide:
+"Training module overview"
+Primary visual emotion:
+Skepticism and uncertainty
+
+Panel 2 - Bluetrace discovery workshop (Intervention)
+Scene prompt:
+"Premium realistic illustration of Bluetrace team conducting structured discovery workshop with principal, teachers, and operations staff, workflow maps on digital board, pain points and KPI goals captured live, collaborative professional setting, clear architecture-first approach visualized."
+Caption:
+"Bluetrace starts with workflow and KPI-driven discovery."
+UI hint on board:
+"Pain points -> Design -> Pilot KPIs"
+Primary visual emotion:
+Alignment and confidence
+
+Panel 3 - Integrated architecture planning (Depth)
+Scene prompt:
+"Premium realistic illustration of Bluetrace architects presenting integrated app + cloud + device architecture, layered diagram visible with parent app, teacher app, dashboards, transport sensors, and data platform, realistic engineering artifacts, high-credibility technical planning atmosphere."
+Caption:
+"Engineering depth connects app, device, and data layers."
+UI hint on architecture panel:
+"Apps | APIs | IoT | Analytics"
+Primary visual emotion:
+Credibility and assurance
+
+Panel 4 - Pilot execution with governance (Delivery)
+Scene prompt:
+"Premium realistic illustration of pilot rollout war-room with milestone tracker, risk register, test results, and stakeholder updates, Bluetrace lead and school coordinator reviewing progress, professional and disciplined delivery visual language, readable status indicators."
+Caption:
+"Pilots run with measurable governance, not ad-hoc effort."
+UI hint on tracker:
+"Milestones: 8/10 complete | Risks: 2 open"
+Primary visual emotion:
+Execution confidence
+
+Panel 5 - Outcome review and scale recommendation (Proof)
+Scene prompt:
+"Premium realistic illustration of joint review session showing pilot outcomes, adoption charts, stakeholder feedback scorecards, and prioritized scale roadmap, management and Bluetrace team in discussion, clean evidence-driven presentation setup."
+Caption:
+"Pilot evidence drives smart scale-up decisions."
+UI hint on dashboard:
+"Adoption: 78% | Satisfaction: 4.4/5"
+Primary visual emotion:
+Validation and clarity
+
+Panel 6 - Annual partnership dashboard (Board-level value)
+Scene prompt:
+"Premium realistic illustration in chairman/director boardroom with annual technology partnership dashboard showing multi-module adoption, ROI trend, issue resolution performance, and roadmap milestones, leadership team reviewing long-term outcomes, premium institutional tone and strategic confidence."
+Caption:
+"Bluetrace positions schools for long-term technology leadership."
+Dashboard KPI hints:
+"Modules adopted: 5"
+"Year-on-year ROI trend: +31%"
+"Critical issue resolution SLA: 96%"
+"Partnership renewal confidence: High"
+Primary visual emotion:
+Strategic trust and long-term commitment
+
+Panel-to-panel continuity rules:
+- Keep same school leadership characters across workshop and review scenes.
+- Keep Bluetrace team identity and attire consistent.
+- Keep architecture visual style and dashboard design coherent.
+- Keep scenes realistic and boardroom-ready, no visual exaggeration.
+- Keep brand-safe palette with restrained accent usage.
+
+Slide assembly order:
+1. Generic gap (Panel 1)
+2. Discovery alignment (Panel 2)
+3. Architecture depth (Panel 3)
+4. Pilot governance (Panel 4)
+5. Outcome validation (Panel 5)
+6. Partnership value (Panel 6)
+
+Presenter line (optional under full strip):
+"Bluetrace differentiates through engineering depth, disciplined delivery, and measurable long-term outcomes."

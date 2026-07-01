@@ -1,0 +1,99 @@
+Transport and Smart Campus Operations - 6 Panel Premium Prompt Set
+
+Use with:
+- CARTOON_VISUAL_QUALITY_STANDARD.md
+- CARTOON_PRODUCTION_PROMPT_PACK.txt
+
+Global style prefix (attach to every panel prompt):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Global negative prompt (attach to every panel prompt):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Output spec for every panel:
+- Resolution: 1920x1080 PNG (minimum)
+- Optional: 3000x1688 PNG for print
+- Keep top 12 percent clear for title
+- Keep bottom 14 percent clear for caption
+- Maintain transport team and route UI continuity across all panels
+
+Panel 1 - Manual tracking confusion (Problem)
+Scene prompt:
+"Premium realistic illustration of school transport office with staff handling phone calls and paper logs during morning dispatch, route updates scattered across whiteboard and notebooks, parent complaints coming in, realistic devices and documents, controlled but stressed environment, boardroom-quality composition showing process fragmentation."
+Caption:
+"Manual transport tracking creates confusion and delays."
+UI hint:
+"Routes: 12 | Exceptions: 4 pending"
+Primary visual emotion:
+Operational stress and overload
+
+Panel 2 - Central route command setup (Intervention)
+Scene prompt:
+"Premium realistic illustration of transport coordinator using Bluetrace control dashboard with live route cards, bus status indicators, and driver check-in panel, clean office setup with large wall display, realistic map visualization, professional environment, clear shift from paper-based to unified command center."
+Caption:
+"Bluetrace centralizes route visibility in one command panel."
+UI hint:
+"Live routes | Driver check-ins | ETA updates"
+Primary visual emotion:
+Control and clarity
+
+Panel 3 - Parent communication sync (Continuity)
+Scene prompt:
+"Premium realistic illustration of parent phone receiving route update and student boarding notification while coordinator confirms status on dashboard, split-scene style with school office and home context, realistic app cards and timestamps, brand-safe colors and coherent UI design."
+Caption:
+"Parents receive trusted updates without repetitive calls."
+UI hint on phone:
+"Bus delayed 10 min | Boarding confirmed"
+Primary visual emotion:
+Trust and reassurance
+
+Panel 4 - Incident escalation flow (Exception management)
+Scene prompt:
+"Premium realistic illustration of route incident workflow where coordinator flags an exception, auto-alert sent to principal and transport lead, escalation timeline visible on dashboard, no panic visuals, calm professional response framing, readable event log and ownership tags."
+Caption:
+"Escalations become accountable and time-bound."
+UI hint on dashboard:
+"Incident #214 | Owner assigned | ETA to close"
+Primary visual emotion:
+Managed urgency and accountability
+
+Panel 5 - End-of-day closure report (Outcome loop)
+Scene prompt:
+"Premium realistic illustration of transport team reviewing daily closure report with completed routes, incident closure summary, and acknowledgement rates, realistic office environment in evening light, structured and confident team posture, clear outcomes displayed on screen."
+Caption:
+"Daily operations close with traceable performance records."
+UI hint:
+"On-time routes: 93% | Incidents closed: 100%"
+Primary visual emotion:
+Operational confidence
+
+Panel 6 - Management KPI dashboard (Board-level proof)
+Scene prompt:
+"Premium realistic illustration in principal/director office showing smart campus transport KPI dashboard with route reliability trend, incident closure time, parent acknowledgement rate, and complaint reduction graph, principal and management reviewing insights, polished executive atmosphere, clean chart hierarchy and readable labels."
+Caption:
+"Management gets measurable transport reliability and governance."
+Dashboard KPI hints:
+"Route reliability: 94%"
+"Avg incident closure: 11m"
+"Parent acknowledgement: 89%"
+"Complaint reduction: 41%"
+Primary visual emotion:
+Decision confidence and governance strength
+
+Panel-to-panel continuity rules:
+- Keep same coordinator identity and office context.
+- Keep map/dashboard visual language consistent across scenes.
+- Keep parent app visual style coherent with previous packs.
+- Keep school branding subtle and realistic.
+- Maintain near-term deployable look; avoid futuristic overdesign.
+
+Slide assembly order:
+1. Manual pain (Panel 1)
+2. Central command (Panel 2)
+3. Parent sync (Panel 3)
+4. Exception control (Panel 4)
+5. Daily closure (Panel 5)
+6. Management proof (Panel 6)
+
+Presenter line (optional under full strip):
+"Bluetrace turns transport operations into a measurable, trusted, and accountable smart campus system."

@@ -1,0 +1,99 @@
+AI Teacher Productivity - 6 Panel Premium Prompt Set
+
+Use with:
+- CARTOON_VISUAL_QUALITY_STANDARD.md
+- CARTOON_PRODUCTION_PROMPT_PACK.txt
+
+Global style prefix (attach to every panel prompt):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Global negative prompt (attach to every panel prompt):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Output spec for every panel:
+- Resolution: 1920x1080 PNG (minimum)
+- Optional: 3000x1688 PNG for print
+- Keep top 12 percent clear for title
+- Keep bottom 14 percent clear for caption
+- Maintain teacher and classroom continuity across all panels
+
+Panel 1 - Teacher overload (Problem)
+Scene prompt:
+"Premium realistic illustration of an Indian teacher at desk after school hours surrounded by notebooks, lesson plans, and worksheet drafts, laptop open with many tabs, tired but focused expression, classroom lights dimming, realistic stationery and classroom textures, boardroom-quality composition highlighting workload pressure."
+Caption:
+"Teacher preparation load is high and repetitive."
+UI hint on laptop:
+"Pending: worksheet, question bank, lesson plan"
+Primary visual emotion:
+Fatigue and pressure
+
+Panel 2 - AI assistant drafting (Intervention)
+Scene prompt:
+"Premium realistic illustration of same teacher using a school AI assistant on tablet/laptop, interface generating worksheet draft and differentiated questions, clean UI with sections for class level and topic, teacher expression shifts to relief, professional classroom prep environment, realistic device glow and natural hand placement."
+Caption:
+"AI drafts quality content in minutes, not hours."
+UI hint:
+"Draft generated: Grade 7 Science Worksheet"
+Primary visual emotion:
+Relief and momentum
+
+Panel 3 - Teacher review and control (Trust)
+Scene prompt:
+"Premium realistic illustration of teacher reviewing AI-generated worksheet, editing and approving final version, student-level difficulty toggles visible on screen, no autopilot framing, clear teacher-in-control story, polished desk setup, realistic expression of confidence and ownership."
+Caption:
+"Teacher stays in control with fast review and approval."
+UI hint:
+"Edit | Approve | Publish"
+Primary visual emotion:
+Confidence and control
+
+Panel 4 - Classroom delivery (Operational impact)
+Scene prompt:
+"Premium realistic classroom scene where students receive tailored assignments on tablets and printouts, teacher guiding different groups, balanced classroom engagement, board displays lesson objective and activity timer, realistic student expressions and participation, clean composition for differentiated learning impact."
+Caption:
+"Students receive level-appropriate tasks with better engagement."
+UI hint on class screen:
+"Group A: Core | Group B: Advanced"
+Primary visual emotion:
+Engagement and clarity
+
+Panel 5 - Parent and student outcome visibility (Continuity)
+Scene prompt:
+"Premium realistic illustration of parent and student at home checking app timeline showing assignment status, feedback, and next steps, warm evening light, clear and trustworthy UI cards, realistic home setting, subtle emotional shift to confidence and routine stability."
+Caption:
+"Families get clear progress visibility without confusion."
+UI hint on phone:
+"Completed: 3 tasks | Feedback available"
+Primary visual emotion:
+Trust and reassurance
+
+Panel 6 - Principal KPI dashboard (Board-level proof)
+Scene prompt:
+"Premium realistic principal office scene with dashboard showing teacher time saved, assignment turnaround, student completion rate, and class engagement trend, principal and coordinator reviewing insights on large screen, polished executive setting, clean chart hierarchy, data-forward decision atmosphere."
+Caption:
+"Management sees measurable productivity and learning gains."
+Dashboard KPI hints:
+"Teacher prep time saved: 34%"
+"Worksheet turnaround: -52%"
+"Assignment completion: 91%"
+"Engagement index: +27%"
+Primary visual emotion:
+Executive confidence and accountability
+
+Panel-to-panel continuity rules:
+- Keep same teacher character identity and attire style.
+- Keep same class section context and student age group.
+- Keep UI look consistent across laptop/tablet/phone screens.
+- Keep brand-safe palette and realistic classroom details.
+- Avoid overly futuristic visuals; keep near-term deployable tone.
+
+Slide assembly order:
+1. Problem load (Panel 1)
+2. AI acceleration (Panel 2)
+3. Human approval control (Panel 3)
+4. Classroom impact (Panel 4)
+5. Parent/student continuity (Panel 5)
+6. Management proof dashboard (Panel 6)
+
+Presenter line (optional under full strip):
+"Bluetrace AI shifts teachers from repetitive prep to higher-value teaching with measurable outcomes."

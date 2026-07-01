@@ -1,0 +1,33 @@
+Bluetrace Premium Cartoon Prompt Pack
+
+Global style prompt (prefix for every generation):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Prompt template:
+1) Scene context:
+- [School/transport/classroom/principal office/home]
+2) Characters:
+- [Parent/Student/Teacher/Admin/Driver]
+3) Action:
+- [Problem or intervention moment]
+4) Device/UI:
+- [Phone screen or dashboard element]
+5) Mood:
+- [Anxiety -> relief -> confidence]
+6) Caption intent:
+- [One outcome line]
+
+Negative prompt (always append):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Example prompt 1 (wearable boarding):
+"Premium realistic illustration, Indian school bus boarding area at morning light, parent checking phone, student taps wearable checkpoint at bus door, app screen shows 'Boarded 7:42 AM', calm trustworthy mood, clean uniforms, realistic bus details, boardroom-quality composition, brand-safe navy/teal/gold accents."
+
+Example prompt 2 (teacher productivity):
+"Premium realistic classroom prep scene, teacher reviewing AI-generated worksheet on tablet, organized desk, dashboard widget shows 'time saved this week', professional and confident mood, realistic lighting and textures, clear hierarchy for slide storytelling, brand-safe palette."
+
+Output specs:
+- Primary: 1920x1080 PNG
+- Optional print: 3000x1688 PNG
+- Keep title-safe area clear (top 12 percent)
+- Keep caption-safe area clear (bottom 14 percent)

@@ -1,0 +1,99 @@
+Admission and Parent Experience - 6 Panel Premium Prompt Set
+
+Use with:
+- CARTOON_VISUAL_QUALITY_STANDARD.md
+- CARTOON_PRODUCTION_PROMPT_PACK.txt
+
+Global style prefix (attach to every panel prompt):
+"Premium realistic illustration, cinematic yet clean lighting, professional Indian school environment, natural human proportions, polished texture detail, boardroom presentation quality, soft depth-of-field, brand-safe palette (navy #14324A, teal #1F8A70, gold #C58F2B, light neutrals), high clarity, no distortion, no caricature exaggeration, no extra fingers, no warped text."
+
+Global negative prompt (attach to every panel prompt):
+"low resolution, blurry, cartoonish childish style, exaggerated faces, malformed hands, warped UI text, neon colors, cluttered background, visual noise, low contrast, watermark, logo artifacts"
+
+Output spec for every panel:
+- Resolution: 1920x1080 PNG (minimum)
+- Optional: 3000x1688 PNG for print
+- Keep top 12 percent clear for title
+- Keep bottom 14 percent clear for caption
+- Maintain same parent applicant and counselor identity across panels
+
+Panel 1 - Fragmented admission journey (Problem)
+Scene prompt:
+"Premium realistic illustration of parent managing admission process across paper forms, phone calls, and multiple message threads, visibly confused but professional environment, school reception desk in background, realistic document piles and phone notifications, boardroom-quality composition focused on friction and uncertainty."
+Caption:
+"Parents face scattered steps and unclear admission status."
+UI hint:
+"Documents pending | Follow-up pending"
+Primary visual emotion:
+Confusion and frustration
+
+Panel 2 - Guided digital onboarding (Intervention)
+Scene prompt:
+"Premium realistic illustration of parent using Bluetrace admission app wizard with clear step-by-step onboarding, counselor available for support, clean UI showing progress bar and required document checklist, welcoming school office environment, high trust and clarity visual tone."
+Caption:
+"Bluetrace guides admissions through a single clear workflow."
+UI hint on app:
+"Step 2 of 5 | Upload documents"
+Primary visual emotion:
+Relief and clarity
+
+Panel 3 - Document and fee transparency (Continuity)
+Scene prompt:
+"Premium realistic illustration of parent dashboard showing verified documents, payment status, interview schedule, and next actions, child and parent reviewing together at home, realistic phone/tablet UI, calm and structured atmosphere, consistent visual identity with earlier panels."
+Caption:
+"Document and fee status become transparent and predictable."
+UI hint:
+"Verified: 6/6 | Fee status: Complete"
+Primary visual emotion:
+Confidence and predictability
+
+Panel 4 - Counselor follow-up automation (Service quality)
+Scene prompt:
+"Premium realistic illustration of counselor workspace using follow-up queue with automated reminders and response templates, parent receives timely appointment update, clean CRM-like interface visible on monitor, organized and empathetic service framing."
+Caption:
+"Automated follow-ups improve parent service quality."
+UI hint on dashboard:
+"Follow-ups due today: 8 | Response SLA: On track"
+Primary visual emotion:
+Trust and responsiveness
+
+Panel 5 - Offer and confirmation flow (Outcome loop)
+Scene prompt:
+"Premium realistic illustration of parent receiving admission confirmation on app with next-step checklist, child and family celebrating calmly, school welcome package visible, realistic and tasteful emotional uplift, no exaggerated poses, polished presentation quality."
+Caption:
+"Admission closure is faster, clearer, and stress-free."
+UI hint on phone:
+"Admission confirmed | Orientation date: 12 Aug"
+Primary visual emotion:
+Assurance and satisfaction
+
+Panel 6 - Management funnel dashboard (Board-level proof)
+Scene prompt:
+"Premium realistic illustration in principal/director office with admissions funnel dashboard showing enquiry-to-application conversion, completion rate, follow-up response time, and drop-off reasons, management team reviewing trends, executive setting, clear charts and decision-ready metrics."
+Caption:
+"Management tracks admissions with data-backed precision."
+Dashboard KPI hints:
+"Completion rate: 86%"
+"Conversion rate: 42%"
+"Avg follow-up response: 2h 15m"
+"Drop-off reduction: 29%"
+Primary visual emotion:
+Strategic confidence and growth visibility
+
+Panel-to-panel continuity rules:
+- Keep same parent applicant profile throughout.
+- Keep counselor and school office identity consistent.
+- Keep admission UI components visually coherent across devices.
+- Keep emotional arc realistic: confusion to confidence.
+- Keep brand-safe palette and clean contrast standards.
+
+Slide assembly order:
+1. Fragmented process pain (Panel 1)
+2. Guided onboarding (Panel 2)
+3. Transparency stage (Panel 3)
+4. Service follow-up quality (Panel 4)
+5. Confirmation closure (Panel 5)
+6. Management funnel proof (Panel 6)
+
+Presenter line (optional under full strip):
+"Bluetrace transforms admission journeys into transparent, responsive, and conversion-focused parent experiences."
