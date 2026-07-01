@@ -37,5 +37,12 @@ This folder contains a clean Android Kotlin source project (Jetpack Compose) for
 3. Run `gradle -p . assembleDebug` inside this folder.
 4. Install APK from `app/build/outputs/apk/debug/` on device.
 
+## Automated local setup script
+- PowerShell script: `scripts/setup-android-build.ps1`
+- Run from this folder:
+	- `powershell -ExecutionPolicy Bypass -File .\scripts\setup-android-build.ps1`
+- After setup completes:
+	- `.\gradlew.bat assembleDebug`
+
 ## Notes
 - This repository previously contained proposal artifacts; this app folder is a new execution-ready codebase foundation.
