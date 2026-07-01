@@ -21,6 +21,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -31,6 +32,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -54,9 +56,15 @@ import com.bluetrace.education.ui.theme.SurfaceCard
 import com.bluetrace.education.ui.theme.SurfaceSoft
 import com.bluetrace.education.ui.theme.Teal600
 
+private enum class UserRole { Parent, Teacher, Principal }
+
+private enum class ScreenState { Live, Loading, Empty, Error }
+
 @Composable
 fun BluetraceApp() {
     var selectedTab by rememberSaveable { mutableIntStateOf(0) }
+    var selectedRole by rememberSaveable { mutableStateOf(UserRole.Principal) }
+    var screenState by rememberSaveable { mutableStateOf(ScreenState.Live) }
     val tabs = listOf("Command", "Safety", "Profile")
 
     Scaffold(
@@ -90,26 +98,165 @@ fun BluetraceApp() {
         ) {
             item { HeroPanel() }
             item {
-                SectionTitle(
-                    title = "Today at a glance",
-                    subtitle = "Live leadership metrics"
+                RoleSwitcher(
+                    selectedRole = selectedRole,
+                    onRoleSelect = { selectedRole = it }
                 )
             }
-            item { KpiGrid(metrics = MockRepository.kpis) }
             item {
-                SectionTitle(
-                    title = "Student safety timeline",
-                    subtitle = "Operational events and confirmations"
+                StateSwitcher(
+                    screenState = screenState,
+                    onStateSelect = { screenState = it }
                 )
             }
-            itemsIndexed(MockRepository.safetyTimeline) { index, event ->
-                EventCard(
-                    time = event.time,
-                    title = event.title,
-                    detail = event.detail,
-                    isLast = index == MockRepository.safetyTimeline.lastIndex
+            when (screenState) {
+                ScreenState.Live -> {
+                    if (selectedTab == 0) {
+                        item {
+                            SectionTitle(
+                                title = when (selectedRole) {
+                                    UserRole.Parent -> "Family command view"
+                                    UserRole.Teacher -> "Teaching command view"
+                                    UserRole.Principal -> "Institution command view"
+                                },
+                                subtitle = "Role-aware priorities with premium clarity"
+                            )
+                        }
+                        item { RoleSpotlight(role = selectedRole) }
+                        item {
+                            SectionTitle(
+                                title = "Today at a glance",
+                                subtitle = "Live leadership metrics"
+                            )
+                        }
+                        item { KpiGrid(metrics = MockRepository.kpis) }
+                    } else if (selectedTab == 1) {
+                        item {
+                            SectionTitle(
+                                title = "Student safety timeline",
+                                subtitle = "Operational events and confirmations"
+                            )
+                        }
+                        itemsIndexed(MockRepository.safetyTimeline) { index, event ->
+                            EventCard(
+                                time = event.time,
+                                title = event.title,
+                                detail = event.detail,
+                                isLast = index == MockRepository.safetyTimeline.lastIndex
+                            )
+                        }
+                    } else {
+                        item {
+                            SectionTitle(
+                                title = "Profile and preferences",
+                                subtitle = "Your role context and smart defaults"
+                            )
+                        }
+                        item { ProfileCard(role = selectedRole) }
+                    }
+                }
+
+                ScreenState.Loading -> {
+                    item { LoadingCard() }
+                }
+
+                ScreenState.Empty -> {
+                    item { EmptyCard(selectedTab = tabs[selectedTab]) }
+                }
+
+                ScreenState.Error -> {
+                    item { ErrorCard() }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun RoleSwitcher(selectedRole: UserRole, onRoleSelect: (UserRole) -> Unit) {
+    Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = SurfaceCard,
+        tonalElevation = 1.dp
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            UserRole.entries.forEach { role ->
+                val selected = selectedRole == role
+                Surface(
+                    modifier = Modifier.weight(1f),
+                    shape = RoundedCornerShape(12.dp),
+                    color = if (selected) Teal600 else SurfaceSoft,
+                    onClick = { onRoleSelect(role) }
+                ) {
+                    Text(
+                        text = role.name,
+                        modifier = Modifier.padding(vertical = 10.dp),
+                        color = if (selected) Color.White else Navy700,
+                        style = MaterialTheme.typography.labelLarge,
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun StateSwitcher(screenState: ScreenState, onStateSelect: (ScreenState) -> Unit) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        ScreenState.entries.forEach { state ->
+            val active = state == screenState
+            Surface(
+                modifier = Modifier.weight(1f),
+                shape = RoundedCornerShape(12.dp),
+                color = if (active) Navy700 else SurfaceCard,
+                border = BorderStroke(1.dp, BorderSoft),
+                onClick = { onStateSelect(state) }
+            ) {
+                Text(
+                    text = state.name,
+                    modifier = Modifier.padding(vertical = 8.dp),
+                    textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = if (active) Color.White else Ink700
                 )
             }
+        }
+    }
+}
+
+@Composable
+private fun RoleSpotlight(role: UserRole) {
+    val title = when (role) {
+        UserRole.Parent -> "Parent confidence loop"
+        UserRole.Teacher -> "Teacher productivity loop"
+        UserRole.Principal -> "Principal governance loop"
+    }
+    val description = when (role) {
+        UserRole.Parent -> "Real-time boarding, class updates, and pickup closure in one trusted stream."
+        UserRole.Teacher -> "AI-assisted planning, differentiated delivery, and cleaner family communication."
+        UserRole.Principal -> "Decision-ready KPIs with cross-team accountability and measurable outcomes."
+    }
+
+    Card(
+        shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = SurfaceCard),
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(14.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text(text = title, style = MaterialTheme.typography.titleMedium, color = Navy700)
+            Text(text = description, style = MaterialTheme.typography.bodyMedium, color = Ink700)
         }
     }
 }
@@ -266,6 +413,92 @@ private fun EventCard(time: String, title: String, detail: String, isLast: Boole
                 HorizontalDivider(color = BorderSoft)
                 Text(text = "Status: verified", style = MaterialTheme.typography.bodySmall, color = Teal600)
             }
+        }
+    }
+}
+
+@Composable
+private fun ProfileCard(role: UserRole) {
+    Card(
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = SurfaceCard)
+    ) {
+        Column(
+            modifier = Modifier.padding(14.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text(text = "Active role", style = MaterialTheme.typography.bodySmall, color = Ink700)
+            Text(text = role.name, style = MaterialTheme.typography.titleLarge, color = Navy700)
+            HorizontalDivider(color = BorderSoft)
+            Text(
+                text = "Notifications, privacy, and alert routing are configured for this persona.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = Ink700
+            )
+        }
+    }
+}
+
+@Composable
+private fun LoadingCard() {
+    Card(
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = SurfaceCard)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(18.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            CircularProgressIndicator(color = Teal600)
+            Text(text = "Syncing live school intelligence...", color = Ink700)
+        }
+    }
+}
+
+@Composable
+private fun EmptyCard(selectedTab: String) {
+    Card(
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = SurfaceCard)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(18.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text(text = "No data yet", style = MaterialTheme.typography.titleMedium, color = Navy700)
+            Text(
+                text = "No items found for $selectedTab right now. Once activity starts, cards will appear here.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = Ink700
+            )
+        }
+    }
+}
+
+@Composable
+private fun ErrorCard() {
+    Card(
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = SurfaceCard),
+        border = BorderStroke(1.dp, Amber500.copy(alpha = 0.4f))
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(18.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text(text = "Connection interrupted", style = MaterialTheme.typography.titleMedium, color = Navy700)
+            Text(
+                text = "We could not refresh data. Please retry from a stable network.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = Ink700
+            )
         }
     }
 }
